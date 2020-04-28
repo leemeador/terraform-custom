@@ -1,4 +1,5 @@
-ARG TERRAFORM_VERSION=0.12.23 # ARG preceeding the first FOR can be used in the FORs
+ARG TERRAFORM_VERSION=0.12.23
+# ARG preceeding the first FOR can be used in the FORs
 
 # For caching purposes
 FROM alpine as providers
