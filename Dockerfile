@@ -16,4 +16,3 @@ RUN ls -lrt /usr/providers
 FROM hashicorp/terraform:${TERRAFORM_VERSION}
 
 COPY --from=providers /usr/providers/terraform-provider-azurerm_v${TERRAFORM_PROVIDER_VERSION}_x4 /bin/
-
