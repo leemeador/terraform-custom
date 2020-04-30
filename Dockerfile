@@ -17,4 +17,6 @@ RUN wget -O terraform-${TERRAFORM_PROVIDER_VERSION}.zip https://releases.hashico
 # Add them to hashicorp/terraform image
 FROM hashicorp/terraform:${TERRAFORM_VERSION}
 
+ARG TERRAFORM_PROVIDER_VERSION
+
 COPY --from=providers /usr/providers/terraform-provider-azurerm_v${TERRAFORM_PROVIDER_VERSION}_x4 /bin/
