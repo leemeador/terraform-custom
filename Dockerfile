@@ -19,4 +19,6 @@ FROM hashicorp/terraform:${TERRAFORM_VERSION}
 
 ARG TERRAFORM_PROVIDER_VERSION=1.39.0
 
+ENV TF_IN_AUTOMATION=TRUE
+
 COPY --from=providers /usr/providers/terraform-provider-azurerm_v${TERRAFORM_PROVIDER_VERSION}_x4 /bin/
