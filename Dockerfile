@@ -1,4 +1,4 @@
-ARG TERRAFORM_VERSION=0.12.23
+ARG TERRAFORM_VERSION=0.12.24
 # ARG preceeding the first FOR can be used in the FORs
 
 # For caching purposes
